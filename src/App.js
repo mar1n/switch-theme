@@ -68,8 +68,13 @@ const StyledHeader = Styled.header`
 `;
 
 const StyledFooter = Styled.footer`
-  background: lightgreen;
-  height: 80px;
+  position:-webkit-sticky; 
+  position:sticky;
+  bottom:0;
+  height: 60px;
+  padding: 0 1rem;
+
+  background-color: #242526;
 `;
 
 const StyledMain = Styled.article`
