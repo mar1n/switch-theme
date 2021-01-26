@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Styled from "styled-components";
+import "./TopNav.css";
 
 const TopNav = () => {
+  const [open, setOpen] = useState(false);
+  const openMenu = () => setOpen(!open);
   return (
     <>
       <nav>
-            <StyledMenu>
-                <Link to="/">Home</Link>
-                <Link to="/skills">Skills</Link>
-                <Link to="/aboutme">About Me</Link>
-            </StyledMenu>
+        <Icon open={open} openMenu={openMenu} />
+        <div onClick={openMenu} className={`menu-container ${open ? "open-container" : ""}`}>
+          <Link to="/">Home</Link>
+          <Link to="/skills">Skills</Link>
+          <Link to="/aboutme">About Me</Link>
+        </div>
       </nav>
     </>
   );
 };
 
-export default TopNav;
+const Icon = ({ openMenu, open }) => {
+  return (
+    <div
+      className={`menu-icon ${open ? "menu-icon-open" : ""}`}
+      onClick={openMenu}
+    ></div>
+  );
+};
 
-const StyledMenu = Styled.div`
-    background-color: orangered;
-`
+export default TopNav;
