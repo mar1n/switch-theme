@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
+import Styled, { ThemeProvider } from "styled-components";
 import { useDarkMode } from "./useDarkMode";
 import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyles } from "./global";
@@ -25,15 +25,23 @@ function App() {
       <ThemeProvider theme={themeMode}>
         <>
           <Toogle theme={theme} toggleTheme={toggleTheme} />
-          <TopNav />
-          <GlobalStyles />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/skills" component={Skills} />
-            <Route exact path="/aboutme" component={AboutMe} />
-            <Route component={NotFound} />
-          </Switch>
-          <Footer />
+          <StyledApp>
+            <StyledHeader>
+              <TopNav />
+            </StyledHeader>
+            <GlobalStyles />
+            <StyledMain>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/skills" component={Skills} />
+                <Route exact path="/aboutme" component={AboutMe} />
+                <Route component={NotFound} />
+              </Switch>
+            </StyledMain>
+            <StyledFooter>
+              <Footer />
+            </StyledFooter>
+          </StyledApp>
         </>
       </ThemeProvider>
     </Router>
@@ -41,3 +49,31 @@ function App() {
 }
 
 export default App;
+
+const StyledApp = Styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+  }
+`;
+
+const StyledHeader = Styled.header`
+  background: tomato;
+  height: 120px;
+`;
+
+const StyledFooter = Styled.footer`
+  background: lightgreen;
+  height: 80px;
+`;
+
+const StyledMain = Styled.article`
+  text-align: left;
+  background: deepskyblue;
+  font-size: 24px;
+`;

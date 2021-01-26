@@ -16,4 +16,16 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   }
+
+  @media all and (min-width: 800px) {
+    .main {
+        flex: 3;
+    }
+    .main {
+        order: 2;
+    }
+    .footer {
+        order: 4;
+    }
+}
 `;
