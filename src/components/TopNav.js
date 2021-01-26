@@ -12,7 +12,7 @@ const TopNav = () => {
         <div onClick={openMenu} className={`menu-container ${open ? "open-container" : ""}`}>
           <Link to="/">Home</Link>
           <Link to="/skills">Skills</Link>
-          <Link to="/aboutme">About Me</Link>
+          <Link to="/powerby">Power By</Link>
         </div>
       </nav>
     </>

@@ -9,7 +9,7 @@ import TopNav from "./components/TopNav";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
 import NotFound from "./components/NotFound";
-import AboutMe from "./components/AboutMe";
+import Powerby from "./components/PowerBy";
 import Footer from "./components/Footer";
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/skills" component={Skills} />
-                <Route exact path="/aboutme" component={AboutMe} />
+                <Route exact path="/powerby" component={Powerby} />
                 <Route component={NotFound} />
               </Switch>
             </StyledMain>
