@@ -24,7 +24,15 @@ function App() {
     <Router>
       <ThemeProvider theme={themeMode}>
         <>
-          <Toogle theme={theme} toggleTheme={toggleTheme} />
+          <StyledTopHeader>
+          <div className="item-right">
+              <Toogle
+                theme={theme}
+                toggleTheme={toggleTheme}
+              />
+            </div>
+            <h1 className="item-left">Szymon Dawidowicz</h1>
+          </StyledTopHeader>
           <StyledApp>
             <StyledHeader>
               <TopNav />
@@ -62,6 +70,18 @@ const StyledApp = Styled.div`
   }
 `;
 
+const StyledTopHeader = Styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  .item-left {
+    flex: 50%;
+  }
+  .item-right {
+    flex: 50%;
+  }
+`;
 const StyledHeader = Styled.header`
   background: tomato;
   height: 120px;
