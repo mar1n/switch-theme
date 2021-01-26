@@ -6,7 +6,7 @@ import { GlobalStyles } from "./global";
 import Toogle from "./components/Toggle";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import TopNav from "./components/TopNav";
-import Home from "./Home";
+import Home from "./components/Home";
 import Skills from "./components/Skills";
 import NotFound from "./components/NotFound";
 import AboutMe from "./components/AboutMe";
