@@ -6,7 +6,7 @@ import Styled from "styled-components";
 const Home = () => {
   return (
     <>
-      <h1>Home</h1>
+      <Video />
       <p>
         Creative, collaborative and hard working Software Engineer looking for
         JavaScript/React/Node position in a strong tech culture environment. I
@@ -20,7 +20,7 @@ const Home = () => {
         career change into tech. Since September 2020 I have been working with a
         private coding coach to refine and improve my existing coding skills.
       </p>
-      <Video />
+
       <StyledImg>
         <img src={bootcamp} alt="Szymon" width="600" height="400" />
       </StyledImg>

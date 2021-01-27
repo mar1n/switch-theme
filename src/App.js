@@ -96,6 +96,6 @@ const StyledFooter = Styled.footer`
 
 const StyledMain = Styled.article`
   text-align: left;
-  background: deepskyblue;
   font-size: 24px;
+  border-top: 1px solid silver;
 `;

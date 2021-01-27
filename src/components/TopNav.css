@@ -1,13 +1,11 @@
+@font-face {
+    font-family: BemboStd;
+    src: url("../font/BemboStd.otf");
+}
 nav {
-    height: 70px;
+    height: 40px;
     width: 100%;
-    position: sticky;
-    top: 0;
     z-index: 1;
-
-    border-bottom: 1px solid silver;
-
-    background-color: #d9d9d9;
 }
 
 .menu {
@@ -21,27 +19,28 @@ nav {
 }
 
 .menu-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.menu-container {
     text-align: center;
 }
 
 .menu-container a {
     width: auto;
     margin: auto;
+    padding: 0px 20px 0px 20px;
     display: inline-block;
 
     color: inherit;
     text-decoration: none;
+    font-family: BemboStd;
+    font-size: .875rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
 
 .menu-container a::after {
     display: block;
+    padding: 0px 0px 16px 0px;
 
-    border-bottom: solid 3px #242526;
+    border-bottom: solid 1px #242526;
 
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
@@ -106,8 +105,6 @@ nav {
         display: none;
     }
     .menu-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         background-color: transparent;
         transform: translateX(0);
         font-size: 1.1rem;

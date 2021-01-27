@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./TopNav.css";
 
 const TopNav = () => {
@@ -10,9 +10,9 @@ const TopNav = () => {
       <nav>
         <Icon open={open} openMenu={openMenu} />
         <div onClick={openMenu} className={`menu-container ${open ? "open-container" : ""}`}>
-          <Link to="/">Home</Link>
-          <Link to="/skills">Skills</Link>
-          <Link to="/powerby">Power By</Link>
+          <NavLink exact={true} activeStyle={{ fontWeight: "bold", color: "#b31d26" }} to="/">Home</NavLink>
+          <NavLink activeStyle={{ fontWeight: "bold", color: "#b31d26" }} to="/skills">Skills</NavLink>
+          <NavLink activeStyle={{ fontWeight: "bold", color: "#b31d26" }} to="/powerby">Power By</NavLink>
         </div>
       </nav>
     </>
