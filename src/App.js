@@ -34,9 +34,9 @@ function App() {
             <h1 className="item-left">Szymon Dawidowicz</h1>
           </StyledTopHeader>
           <StyledApp>
-            <StyledHeader>
+            {/* <StyledHeader> */}
               <TopNav />
-            </StyledHeader>
+            {/* </StyledHeader> */}
             <GlobalStyles />
             <StyledMain>
               <Switch>
@@ -63,10 +63,7 @@ const StyledApp = Styled.div`
   flex-flow: row wrap;
   text-align: center;
   > * {
-    padding: 10px;
-    margin: 10px;
     flex: 1 100%;
-    border-radius: 10px;
   }
 `;
 
