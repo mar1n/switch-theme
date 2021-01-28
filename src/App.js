@@ -25,10 +25,15 @@ function App() {
       <ThemeProvider theme={themeMode}>
         <>
           <StyledTopHeader>
-            <div className="item-right">
+            <div className="item-top-header item-left">
               <Toogle theme={theme} toggleTheme={toggleTheme} />
             </div>
-            <h1 className="item-left">Szymon Dawidowicz</h1>
+            <div className="item-top-header item-center">
+              <h1>Szymon Dawidowicz</h1>
+            </div>
+            <div className="item-top-header item-right">
+                
+            </div>
           </StyledTopHeader>
           <StyledApp>
             <TopNav />
@@ -61,19 +66,29 @@ const StyledApp = Styled.div`
 `;
 
 const StyledTopHeader = Styled.div`
+  @font-face {
+    font-family: BemboStd;
+    src: url("../font/BemboStd.otf");
+  }
+  font-family: BemboStd;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   .item-left {
-    flex: 50%;
+    flex: 33%;
+  }
+  .item-center {
+    flex: 33%;
+    text-align: center;
   }
   .item-right {
-    flex: 50%;
+    flex: 33%;
   }
 `;
 
 const StyledMain = Styled.article`
+  padding: 20px 0;
   text-align: left;
   font-size: 24px;
   border-top: 1px solid #e6e6e6;
