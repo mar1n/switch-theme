@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { ReactComponent as MoonIcon } from "../icons/moon.svg";
-import { ReactComponent as SunIcon } from "../icons/sun.svg";
+import { ReactComponent as SunIcon } from "../icons/sun-black.svg";
 
 const Toogle = ({ theme, toggleTheme }) => {
   const isLight = theme === "light";
@@ -33,8 +33,9 @@ const ToggleContainer = styled.button`
   svg {
     height: auto;
     width: 2.5rem;
+    height: 1.5rem;
     transition: all 0.3s linear;
-
+    
     // sun icon
     &:first-child {
       transform: ${({ lightTheme }) =>

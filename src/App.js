@@ -82,6 +82,7 @@ const StyledTopHeader = Styled.div`
   .item-center {
     flex: 33%;
     text-align: center;
+    font-size: 2.5rem;
   }
   .item-right {
     flex: 33%;
