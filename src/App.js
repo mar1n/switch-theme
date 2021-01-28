@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import Styled, { ThemeProvider } from "styled-components";
 import { useDarkMode } from "./useDarkMode";
 import { lightTheme, darkTheme } from "./theme";
@@ -92,4 +93,8 @@ const StyledMain = Styled.article`
   text-align: left;
   font-size: 24px;
   border-top: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 `;
