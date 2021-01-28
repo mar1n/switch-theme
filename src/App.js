@@ -88,7 +88,7 @@ const StyledTopHeader = Styled.div`
 `;
 
 const StyledMain = Styled.article`
-  padding: 20px 0;
+  padding: 25px;
   text-align: left;
   font-size: 24px;
   border-top: 1px solid #e6e6e6;

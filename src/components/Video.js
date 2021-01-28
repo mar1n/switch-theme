@@ -20,7 +20,35 @@ const Video = () => {
 export default Video;
 
 const StyledVideo = Styled.div`
-    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #b31d26;
+    ::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 0 solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #b31d26;
+      z-index: 1;
+    }
+    ::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 10px solid #b31d26;
+      z-index: 1;
+    }
     video {
       width: 100%;
       height: auto;
@@ -28,6 +56,29 @@ const StyledVideo = Styled.div`
 `;
 
 const StyledVideoBox = Styled.div`
-  padding: 20px;
-  background-color: hotpink;
+    ::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-left: 0 solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #b31d26;
+      z-index: 1;
+    }
+    ::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 0px solid transparent;
+      border-top: 10px solid #b31d26;
+      z-index: 1;
+    }
+    position: relative;
 `;
