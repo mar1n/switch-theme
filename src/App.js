@@ -25,18 +25,13 @@ function App() {
       <ThemeProvider theme={themeMode}>
         <>
           <StyledTopHeader>
-          <div className="item-right">
-              <Toogle
-                theme={theme}
-                toggleTheme={toggleTheme}
-              />
+            <div className="item-right">
+              <Toogle theme={theme} toggleTheme={toggleTheme} />
             </div>
             <h1 className="item-left">Szymon Dawidowicz</h1>
           </StyledTopHeader>
           <StyledApp>
-            {/* <StyledHeader> */}
-              <TopNav />
-            {/* </StyledHeader> */}
+            <TopNav />
             <GlobalStyles />
             <StyledMain>
               <Switch>
@@ -46,9 +41,7 @@ function App() {
                 <Route component={NotFound} />
               </Switch>
             </StyledMain>
-            <StyledFooter>
-              <Footer />
-            </StyledFooter>
+            <Footer />
           </StyledApp>
         </>
       </ThemeProvider>
@@ -79,23 +72,9 @@ const StyledTopHeader = Styled.div`
     flex: 50%;
   }
 `;
-const StyledHeader = Styled.header`
-  background: tomato;
-  height: 120px;
-`;
-
-const StyledFooter = Styled.footer`
-  position:-webkit-sticky; 
-  position:sticky;
-  bottom:0;
-  height: 60px;
-  padding: 0 1rem;
-
-  background-color: #242526;
-`;
 
 const StyledMain = Styled.article`
   text-align: left;
   font-size: 24px;
-  border-top: 1px solid silver;
+  border-top: 1px solid #e6e6e6;
 `;

@@ -12,5 +12,5 @@ const Skills = () => {
 export default Skills;
 
 const StyledSkills = Styled.div`
-    background-color: hotpink;
+
 `;

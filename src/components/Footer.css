@@ -1,18 +1,29 @@
 footer {
-    position:-webkit-sticky; 
-    position:sticky;
-    bottom:0;
     height: 60px;
     padding: 0 1rem;
 
-    background-color: #242526;
+    
 }
 
 .footer {
     max-width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    border-top: 1px solid #e6e6e6;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+.footer-right {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 .footer-item {
@@ -33,7 +44,6 @@ footer {
 
   border-radius: 50%;
 
-  background-color: #484a4d;
 
   transition: filter 300ms;
 }
@@ -45,6 +55,4 @@ footer {
 .footer-button svg {
   width: 20px;
   height: 20px;
-
-  fill: #dadce1;
 }
