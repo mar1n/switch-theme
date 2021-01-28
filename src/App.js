@@ -87,6 +87,12 @@ const StyledTopHeader = Styled.div`
   .item-right {
     flex: 33%;
   }
+  @media (max-width: 480px) {
+    .item-center {
+      font-size: 1.5rem;
+      flex: 60%;
+    }
+  }
 `;
 
 const StyledMain = Styled.article`

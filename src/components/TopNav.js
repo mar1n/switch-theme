@@ -10,9 +10,9 @@ const TopNav = () => {
       <nav>
         <Icon open={open} openMenu={openMenu} />
         <div onClick={openMenu} className={`menu-container ${open ? "open-container" : ""}`}>
-          <NavLink exact={true} activeStyle={{ fontWeight: "bold", color: "#b31d26" }} to="/">Home</NavLink>
-          <NavLink activeStyle={{ fontWeight: "bold", color: "#b31d26" }} to="/skills">Skills</NavLink>
-          <NavLink activeStyle={{ fontWeight: "bold", color: "#b31d26" }} to="/powerby">Power By</NavLink>
+          <NavLink exact={true} activeStyle={{ fontWeight: "bold", color: "#000" }} to="/">Home</NavLink>
+          <NavLink activeStyle={{ fontWeight: "bold", color: "#000" }} to="/skills">Skills</NavLink>
+          <NavLink activeStyle={{ fontWeight: "bold", color: "#000" }} to="/powerby">Power By</NavLink>
         </div>
       </nav>
     </>

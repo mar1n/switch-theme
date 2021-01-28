@@ -74,6 +74,9 @@ const StyledImg = Styled.div`
     border: 0;
     vertical-align: middle;
   }
+  @media (max-width: 480px) {
+      width: 90%;
+  }
 `;
 
 const StyledImgCorners = Styled.div`

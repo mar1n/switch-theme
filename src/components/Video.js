@@ -53,6 +53,9 @@ const StyledVideo = Styled.div`
       width: 100%;
       height: auto;
     }
+    @media (max-width: 480px) {
+      padding: 10px 20px 10px 20px;
+    }
 `;
 
 const StyledVideoBox = Styled.div`
