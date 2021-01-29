@@ -11,15 +11,15 @@ const Skills = () => {
             </div>
             <p>CSS</p>
             <div className="container">
-                <div className="skills css">80%</div>
+                <div className="skills css">90%</div>
             </div>
             <p>JavaScript</p>
             <div className="container">
-                <div className="skills js">90%</div>
+                <div className="skills js">100%</div>
             </div>
             <p>React</p>
             <div className="container">
-                <div className="skills react">90%</div>
+                <div className="skills react">100%</div>
             </div>
             <p>Node</p>
             <div className="container">
@@ -44,9 +44,15 @@ const StyledSkills = Styled.div`
         padding-bottom: 10px;
         color: white;
     }
-    .html { width: 90%; background-color: #4CAF50;}
-    .css { width: 80%; background-color: #2196F3;}
-    .js { width: 65%; background-color: #f44336;}
-    .react { width: 60%; background-color: #808080;}
-    .node { width: 80%; background-color: hotpink;}
+    .html { width: 90%; background-color: #4CAF50; animation: load 2s 0s;}
+    .css { width: 90%; background-color: #2196F3; animation: load 2s 0s;}
+    .js { width: 100%; background-color: #f44336; animation: load 2s 0s;}
+    .react { width: 100%; background-color: #808080; animation: load 2s 0s;}
+    .node { width: 90%; background-color: hotpink; animation: load 2s 0s;}
+
+    @keyframes load {
+        from {
+            width: 0%
+        }
+    }
 `;
