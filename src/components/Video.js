@@ -5,7 +5,7 @@ const Video = () => {
   return (
     <StyledVideoBox>
       <StyledVideo>
-        <video width="400" autoPlay muted loop>
+        <video width="400" playsInline webkit-playsInline autoPlay muted loop>
           <source
             src="//www-static.cdn-one.com/images/onecom/pages/frontpage/FrontpageHeader-preview.mp4"
             type="video/mp4"

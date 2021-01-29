@@ -104,4 +104,9 @@ const StyledMain = Styled.article`
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  @media (max-width: 480px) {
+    > * {
+      margin: 0 0 20px 0px;
+    }
+  }
 `;
