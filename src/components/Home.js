@@ -114,7 +114,7 @@ const StyledText = Styled.div`
     src: url("../font/BemboStd.otf");
   }
   font-family: BemboStd;
-  font-size: .875rem;
+  font-size: 1.3rem;
   line-height: 1.5625rem;
   p {
     text-align: center;
