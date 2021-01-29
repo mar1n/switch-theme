@@ -105,6 +105,7 @@ const StyledMain = Styled.article`
   align-items: center;
   gap: 30px;
   @media (max-width: 480px) {
+    gap: 0px;
     > * {
       margin: 0 0 20px 0px;
     }
